@@ -12,7 +12,7 @@ Official PyTorch implementation for the paper:
 
 
 <p align="center">
-<img src="./media/emotalk.png" width="90%" />
+<img src="./media/DIF-pipeline .png" width="90%" />
 </p>
 
 > Detailed human reconstruction from a single image using Implicit Distribution Field.
