@@ -404,6 +404,12 @@ class HGPIFuNet(BasePIFuNet):
             
             error_if += self.error_term(miu_if, occ_labels)
             
+            ### KL loss
+            k = 0.6
+            b = 7
+            target_sigma = k * torch.exp(-1* b * torch.pow(labels - 0.5, 2))
+            error_if += 0.5 * self.univar_continue_KL_divergence2(labels, target_sigma, miu_if, sigma_if).mean()
+            
             if draw_space_uncertainty:
                 draw_miu = pred_if.reshape(-1).cpu().detach().numpy()
                 draw_sigma = sigma_if.reshape(-1).cpu().detach().numpy()
