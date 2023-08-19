@@ -73,7 +73,7 @@ Here are some great resources we benefit:
 ## **Contact**
 For research purpose, please contact xueting.yang99@gmail.com
 
-For commercial licensing, please contact fanzhaoxin@psyai.net
+For commercial licensing, please contact fanzhaoxin@psyai.net and ps-licensing@tue.mpg.de
 
 ## **License**
 This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. Please read the [LICENSE](LICENSE) file for more information.
