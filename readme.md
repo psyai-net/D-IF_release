@@ -8,7 +8,7 @@ Official PyTorch implementation for the paper:
 >
 > Xueting Yang, Yihao Luo, Yuliang Xiu, Wei Wang, Hao Xu, Zhaoxin Fan
 >
-> <a href=''><img src='https://img.shields.io/badge/arXiv-2303.11089-red'></a> <a href='https://yxt7979.github.io/idf/'><img src='https://img.shields.io/badge/Project-Video-Green'></a> [![License ↗](https://img.shields.io/badge/License-CCBYNC4.0-blue.svg)](LICENSE)
+> <a href='https://arxiv.org/abs/2308.08857'><img src='https://img.shields.io/badge/arXiv-2308.08857-red'></a> <a href='https://yxt7979.github.io/idf/'><img src='https://img.shields.io/badge/Project-Video-Green'></a> [![License ↗](https://img.shields.io/badge/License-CCBYNC4.0-blue.svg)](LICENSE)
 
 
 <p align="center">
