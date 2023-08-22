@@ -42,6 +42,7 @@ pip install -r requirements.txt --use-deprecated=legacy-resolver
 
 
 ## **Demo**
+The pretrained D-IF model has been uploaded [here](https://drive.google.com/file/d/1_JbMMdl-c3I3KbWulAiOUeILPAX1OB5o/view?usp=sharing). You could change the resume path in ./configs/d_if.yaml.
 
 ```bash
 python -m apps.infer -cfg ./configs/d_if.yaml -gpu 0 -in_dir ./examples -out_dir ./results -export_video -loop_smpl 100 -loop_cloth 200 -hps_type pixie
