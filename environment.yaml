@@ -1,4 +1,4 @@
-name: icon
+name: D-IF
 channels:
   - pytorch-lts
   - nvidia
