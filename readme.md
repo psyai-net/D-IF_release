@@ -1,21 +1,24 @@
-![Psyche AI Inc release](./media/psy_logo.png)
+<p align="center">
+<img src="./media/psy_logo.png">
+</p>
 
-# D-IF: Uncertainty-aware Human Digitization via Implicit Distribution Field [ICCV2023]
+<h1 align="center">D-IF: Uncertainty-aware Human Digitization via Implicit Distribution Field [<i>ICCV2023</i>]</h1>
 
 Official PyTorch implementation for the paper:
 
-> **D-IF: Uncertainty-aware Human Digitization via Implicit Distribution Field**, ***ICCV 2023***.
+> **D-IF: Uncertainty-aware Human Digitization via Implicit Distribution Field**. ***ICCV 2023***.
 >
-> Xueting Yang, Yihao Luo, Yuliang Xiu, Wei Wang, Hao Xu, Zhaoxin Fan
+> Xueting Yang*, Yihao Luo*, Yuliang Xiu, Wei Wang, Hao Xu, Zhaoxin Fan (*equally contributed)
 >
 > <a href='https://arxiv.org/abs/2308.08857'><img src='https://img.shields.io/badge/arXiv-2308.08857-red'></a> <a href='https://yxt7979.github.io/idf/'><img src='https://img.shields.io/badge/Project-Video-Green'></a> [![License ↗](https://img.shields.io/badge/License-CCBYNC4.0-blue.svg)](LICENSE)
+> 
+> <i><strong>Implicit Distance Field → Implicit Distribution Field</strong>, pointwise uncertainty is modeled as the magnitude of variance in Gaussian. This simple trick enhances multiple baselines (PIFu, PaMIR, ICON) significantly.</i>
 
 
 <p align="center">
-<img src="./media/DIF-pipeline .png" width="90%" />
+<img src="./media/DIF-pipeline .png" width="100%" />
 </p>
 
-> Detailed human reconstruction from a single image using Implicit Distribution Field.
 
 ## Environment
 
@@ -48,7 +51,7 @@ The pretrained D-IF model has been uploaded [here](https://drive.google.com/file
 python -m apps.infer -cfg ./configs/d_if.yaml -gpu 0 -in_dir ./examples -out_dir ./results -export_video -loop_smpl 100 -loop_cloth 200 -hps_type pixie
 ```
 
-## **Train/Test**
+## **Training & Testing**
 Train dataset: Thuman2.0, for download, please follow the steps of [ICON_train](https://github.com/YuliangXiu/ICON/blob/master/docs/dataset.md#thuman20) completely.
 ```bash
 CUDA_VISIBLE_DEVICES=7 python -m apps.train -cfg ./configs/train/d_if.yaml
@@ -60,8 +63,14 @@ python -m apps.train -cfg ./configs/train/d_if.yaml -test
 
 ## **Citation**
 If you find this work useful for your research, please cite our paper:
-```
-comming soon
+
+```bibtex
+@inproceedings{yang2023dif,
+  title={{D-IF: Uncertainty-aware Human Digitization via Implicit Distribution Field}},
+  author={Yang, Xueting and Luo, Yihao and Xiu, Yuliang and Wang, Wei and Xu, Hao and Fan, Zhaoxin},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  year={2023}
+}
 ```
 
 ## **Acknowledgement**
@@ -83,7 +92,7 @@ This project is licensed under the Creative Commons Attribution-NonCommercial 4.
 
 We invite you to join [Psyche AI Inc](https://www.psyai.com/home) to conduct cutting-edge research and business implementation together. At Psyche AI Inc, we are committed to pushing the boundaries of what's possible in the fields of artificial intelligence and computer vision, especially their applications in avatars. As a member of our team, you will have the opportunity to collaborate with talented individuals, innovate new ideas, and contribute to projects that have a real-world impact.
 
-If you are passionate about working on the forefront of technology and making a difference, we would love to hear from you. Please visit our website at [Psyche AI Inc](https://www.psyai.com/home) to learn more about us and to apply for open positions. You can also contact us by fanzhaoxin@psyai.net.
+If you are passionate about working on the forefront of technology and making a difference, we would love to hear from you. Please visit our website at [Psyche AI Inc](https://www.psyai.com/home) to learn more about us and to apply for open positions. You can also contact us by [fanzhaoxin@psyai.net](mailto:fanzhaoxin@psyai.net).
 
 Let's shape the future together!!
 
